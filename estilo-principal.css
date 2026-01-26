@@ -97,3 +97,13 @@ body {
   padding: 30px;
   text-align: center;
 }
+
+/*CSS SECCION GAMEPLAY EILEEN */
+
+.subtitulo-seccion {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.contenedor-video {
+  margin: 40px 0;
+}
