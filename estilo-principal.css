@@ -75,20 +75,24 @@ body {
 }
 
 .logo {
-  height: 50px;
+  height: 90px;
 }
-
 /* BOTONES DEL MENÚ */
 .botones-navegacion {
   display: flex;
   list-style: none; /* Quita los puntitos de la lista */
-  gap: 15px;
+  gap: 15px; ;
 }
 
 .botones-navegacion a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none; /* Quita el subrayado de los links */
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.botones-navegacion a:hover {
+  color: #facc15;
 }
 
 .pie {
