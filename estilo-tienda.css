@@ -1,0 +1,126 @@
+#seccion-tienda {
+  padding: 60px 5%;
+  background-color: #121212; /* Fondo negro sólido */
+  color: white;
+  display: block; /* La sección en sí misma no debe ser flex, solo el contenedor de adentro */
+  height: auto;
+}
+
+.titulo-tienda {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 15px;
+  font-size: 50px;
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-direction: row; /* Los productos se alinean en fila */
+  flex-wrap: wrap; /* Permite que los productos bajen a la siguiente fila si no caben */
+  justify-content: center; /* Centra los productos en el espacio disponible */
+  gap: 25px; /* Espacio uniforme entre tarjetas */
+  width: 100%;
+  height: auto; /* IMPORTANTE: Permite que el contenedor crezca hacia abajo */
+}
+
+.tarjeta-producto {
+  /* Flex-basis define el tamaño base (250px). 
+     Flex-grow (0) evita que se estiren feo si sobra espacio. 
+     Flex-shrink (1) permite que se achiquen en pantallas pequeñas. */
+  flex: 0 1 250px;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Organiza el contenido de la tarjeta (foto arriba, texto abajo) */
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.tarjeta-producto:hover {
+  transform: translateY(-10px);
+  border-color: #a855f7;
+}
+
+.imagen-pro {
+  background: #252525;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.imagen-pro img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.info-pro {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Hace que todas las tarjetas de una fila se vean del mismo alto */
+}
+
+.info-pro h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.info-pro p {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 15px;
+  flex-grow: 1; /* Empuja el precio hacia abajo para que todos queden alineados */
+}
+
+.precio {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00f3ff;
+  margin-top: auto; /* Anclaje al fondo de la tarjeta */
+  margin-bottom: 10px;
+}
+
+.enlace-oficial {
+  width: 100%; /* Ocupa todo el ancho después de las tarjetas */
+  margin-top: 80px;
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.enlace-oficial {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ccc;
+  margin: 0px;
+}
+.boton-link-tienda {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: #a855f7;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #a855f7;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+}
+.boton-link-tienda:hover {
+  background-color: #a855f7;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(168, 85, 247, 0.6);
+  transform: scale(1.05);
+}
