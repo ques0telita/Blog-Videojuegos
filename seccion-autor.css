@@ -1,30 +1,44 @@
 /* CSS SECCION AUTOR SEBASTIAN------
 /* fondo oscuro con estrellas */
 
-.body-autor{
-    background-image: url('/multimedia/nocheestrellada.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;}
+#seccion-autor{
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('multimedia/fondo-noche.jpg') center/cover no-repeat fixed;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 50px;
+    margin-bottom: 2rem;
+}
 
 
 /* la caja que contiene todo el poster */
 .contenedor-autor {
     text-align: center;
     position: relative;
-    width: 600px;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    flex-wrap: wrap; 
 }
 
 /* Estilo para los textos */
 .texto-titulo h1 {
     font-size: 40px;
-    margin: -10;
+    margin: -10px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: aliceblue;
 }
 
 .texto-titulo p {
+    margin-bottom: 1rem;
     text-align: center;
     letter-spacing: 3px;
     font-weight: bold;
+    color: aliceblue;
 }
 
 /* la consola  */
@@ -52,6 +66,22 @@
     border: 3px solid #000;
 }
 
+/* Controles: colocar la cruz y los botones circulares en una fila con espacio entre ellos */
+.controles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 12px;
+    gap: 12px;
+}
+
+.botones-circulo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 /* botones circulares purpuras */
 .circulo {
     width: 30px;
@@ -61,6 +91,7 @@
     border: 3px solid #2D3436;
     display: inline-block;
     margin: 5px;
+    
 }
 
 /* el boton de cruz */
@@ -68,7 +99,7 @@
     width: 50px;
     height: 50px;
     background-color: #2D3436;
-    margin: 20px auto;
+    margin: 1rem;
     /* truco para hacer forma de cruz fast fast fast */
     clip-path: polygon(35% 0%, 65% 0%, 65% 35%, 100% 35%, 100% 65%, 65% 65%, 65% 100%, 35% 100%, 35% 65%, 0% 65%, 0% 35%, 35% 35%);
 }
