@@ -79,3 +79,58 @@
   display: inline-block;
   font-size: 12px;
 }
+/*media queries responsive */
+
+@media (max-width: 480px) {
+  .titulo-contacto {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    font-size: 22px !important;
+    width: 100% !important;
+    margin-bottom: 30px !important;
+  }
+
+  #seccion-contacto {
+    width: 100% !important;
+    padding: 20px 10px !important;
+    overflow-x: hidden !important;
+  }
+
+  .contenedor-github {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+
+  .tarjeta-github {
+    width: 80% !important;
+    max-width: 260px !important;
+    padding: 15px !important;
+    height: auto !important;
+  }
+
+  .tarjeta-github img {
+    width: 60px !important;
+    height: 60px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .tarjeta-github h3 {
+    font-size: 14px !important;
+    margin: 10px 0 !important;
+  }
+
+  .tarjeta-github p {
+    font-size: 11px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .tarjeta-github a {
+    font-size: 10px !important;
+    padding: 8px 12px !important;
+    width: auto !important;
+  }
+}
